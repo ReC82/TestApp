@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorControlHighlight">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Target"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_UnlockUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlock User"
+        android:onClick="UnlockUser"
+        android:layout_marginTop="86dp"
+        android:layout_below="@+id/et_VMServer"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_VMServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="quadrinome"
+        android:text="" />
+
+</RelativeLayout>

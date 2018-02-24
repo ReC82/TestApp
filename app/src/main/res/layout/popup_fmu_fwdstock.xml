@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorControlHighlight">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Target"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/sp_stockuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:id="@+id/btn_FMUfwdStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forward to Stock"
+        android:onClick="btnFMUfwdStock"
+        android:layout_below="@+id/sp_stockuser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnCancel"
+        android:text="Cancel"
+        android:layout_below="@+id/btn_FMUfwdStock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+</RelativeLayout>
